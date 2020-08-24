@@ -15,20 +15,24 @@
 <body>
 	<!-- header start -->
 	<header>
+		
 		<div class="bg_img_1">
 			<div class="container">
 				
-				<div style="display: flex; justify-content: space-between;">
-					<div>LOGO</div>
-					<div class="topnav">
-						<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-						<i class="fa fa-bars"></i>
-						</a>
-						<div id="myLinks">
-							<a href="index.html">home</a>
-							<a href="blog.html">blog</a>
-							<a href="contact.html">therapy</a>
-						</div>
+				<div class="header_wrapper">
+					<a href="index.html" class="logo_wrapper">
+						<i class="fas fa-wave-square logo"></i>
+						<p>NSE</p>
+					</a>
+				</div>
+				<div class="topnav">
+					<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+					</a>
+					<div id="myLinks">
+						<a href="index.html">home</a>
+						<a href="blog.html">blog</a>
+						<a href="contact.html">therapy</a>
 					</div>
 				</div>
 
@@ -137,24 +141,63 @@
 			</div>
 		</div>
 	</div>
-	
-
+	<!-- section - publications -->
+	<div class="bg_5">
+		<div class="container">
+			<h2>publications.</h2>
+			<div class="publ_wrapper">
+				<a href="#" class="block_1">
+					<h3>annual report of the research</h3>
+				</a>
+				<a href="#" class="block_2">
+					<h3>another report</h3>
+				</a>
+			</div>
+			<div class="block_wrapper">
+				<a href="#" class="blocks">
+					<h3>another report</h3>
+				</a>
+				<a href="#" class="blocks">
+					<h3>another report</h3>
+				</a>
+				<a href="#" class="blocks">
+					<h3>another report</h3>
+				</a>
+			</div>
+		</div>
+		<a href="#" class="button_wrapper">
+			<button type="button">view all</button>
+		</a>
+	</div>
+	<!-- section - let's talk -->
+	<div class="bg_6">
+		<div class="container contact_wrapper">
+			
+			<div class="talk">
+				<h2>let's talk.</h2>
+				<p>Totam maiores distinctio corporis, architecto natus harum minima temporibus voluptatum tempore similique quibusdam fuga dolore</p>
+				
+			</div>
+			<img src="https://content.thriveglobal.com/wp-content/uploads/2019/07/GettyImages-685008161.jpg?w=1550" alt="">
+			
+		</div>
+		<div class="button_wrapper">
+			<button type="button">contact</button>
+		</div>
+	</div>
 	<!-- footer start -->
 		<footer>
 			<div class="background_img_f">
-				<div class="container">
-					<div class="footer">
-						<nav class="nav_bar_f_wrapper">
-							<ul>
-								<a href="#">contact</a>
-							</ul>
-							<ul>
-								<a href="#">about us</a>
-							</ul>
-							<ul>
-								<a href="#">help</a>
-							</ul>
-						</nav>
+				<div class="container footer_wrapper">
+					<form class="form_wrapper">
+						<label for="email">keep up to date.</label>
+						<input type="email" name="email" id="email" placeholder="Enter your Email">
+						<div class="button_wrapper_sub">
+							<button type="submit">submit</button>
+						</div>
+					</form>
+
+					<div class="icons">
 						<a href="https://www.facebook.com/" target="blank">
 							<i class="fab fa-facebook-f social fb"></i>
 						</a>
@@ -163,9 +206,10 @@
 						</a>
 						<a href="https://www.instagram.com/" target="blank">
 							<i class="fab fa-instagram social"></i>
-						</a>	
+						</a>
 					</div>
 				</div>
+				<p>© all rigts reserved</p>
 			</div>
 			<button type="button" id="back_to_top"> top </button>
 		</footer>
