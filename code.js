@@ -1,19 +1,52 @@
 
 /* burger bar 
 =========================================================================================================================================*/
-function myFunction() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
-  }
+$(document).ready(function () {
+    $(function () {
+      $(".hamburger-menu").click(function () {
+        $(this).toggleClass("active");
+        $('.menu').toggleClass("active");
+        $('body').toggleClass("active");
+      });
+    });
+  });
 
+// odal
+
+const modalBtn = document.getElementById('modalBtn');
+const modal = document.getElementById('modal');
+const btnod = document.getElementById('btnod');
+const sidebar = document.getElementById('sidebar');
+const openNav = document.getElementById('openNav');
+const closeNav = document.getElementById('closeNav');
+
+// Open modal
+const openModal = () => {
+    modal.style.display = 'inline-block';
+}
+
+// Open navbar
+const openNavbar = () => {
+    sidebar.style.visibility = 'visible';
+}
+
+// Close navbar
+const closeNavbar = () => {
+    sidebar.style.visibility = 'hidden';
+}
+
+
+// Event listeners
+btnod.addEventListener('click', openModal);
+window.addEventListener('click', e => {
+    if (e.target === modal) {
+        modal.style.display = 'none';
+    }
+});
 
 /* back to top button 
 ==============================================================================================================================*/
-var btn = document.getElementById('back_to_top'),
+var btt = document.getElementById('back_to_top'),
 body = document.body,
 doc_elem = document.documentElement,
 offset = 100,
@@ -33,11 +66,11 @@ doc_height = Math.max(body.scrollHeight,
 
     window.addEventListener('scroll', function(event){
         scroll_pos = body.scrollTop || doc_elem.scrollTop;
-        btn.className = (scroll_pos > offset) ? 'visible':'';
+        btt.className = (scroll_pos > offset) ? 'visible':'';
     }
     );
 
-btn.addEventListener('click', function(event){
+btt.addEventListener('click', function(event){
     event.preventDefault();
 
     if(is_firefox){

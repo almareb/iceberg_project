@@ -15,37 +15,51 @@
 <body>
 	<!-- header start -->
 	<header>
-		
-		<div class="bg_img_1">
-			<div class="container">
-				
-				<div class="header_wrapper">
-					<a href="index.html" class="logo_wrapper">
-						<i class="fas fa-wave-square logo"></i>
-						<p>NSE</p>
-					</a>
-				</div>
-				<div class="topnav">
-					<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-					<i class="fa fa-bars"></i>
-					</a>
-					<div id="myLinks">
-						<a href="index.html">home</a>
-						<a href="blog.html">blog</a>
-						<a href="contact.html">therapy</a>
-					</div>
-				</div>
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<a class="hamburger-menu flex">
+		  <span></span>
+		  <span></span>
+		  <span></span>
+		</a>
+		<div class="backgrounddd">
+			<div class="menu flex">
+				<ul class="flex">
+					<li><a href="javascript:;">Home</a></li>
+					<li><a href="javascript:;">blog</a></li>
+					<li><a href="javascript:;">therapy</a></li>
+				</ul>
+			</div>
 
-				<div class="heading_wrapper">
-					<h1>online counseling.</h1>
-					<p>anytime, anywhere </p>
-					<div class="button_wrapper">
-						<button>get started</button>
-					</div>
+			  <div class="heading_wrapper">
+				<h1>online counseling.</h1>
+				<p>anytime, anywhere </p>
+				<div class="button_wrapper">
+					<button class="btn" id="btnod">get started</button>
 				</div>
-				
 			</div>
 		</div>
+
+		<div class="modal" id="modal">
+			<div class="modal-container">
+				<form class="form">
+					<h2>Register Form</h2>
+					<div class="form-control">
+						<input type="text" autocomplete="off" placeholder="username">
+					</div>
+					<div class="form-control">
+						<input type="email" placeholder="email">
+					</div>
+					<div class="form-control">
+						<input type="password" placeholder="password">
+					</div>
+					<div class="form-control">
+						<input type="password" placeholder="confirm password">
+					</div>
+					<button class="modalBtn" id="modalBtn">Submit</button>
+				</form>
+			</div>
+		</div>
+		
 	</header>
 	<!-- header end -->
 	<!-- section 1-  who we are-->
@@ -65,7 +79,7 @@
 
 	<div class="bg_3">
 		<div class="container">
-			<h2>how it works</h2>
+			<h2>how it works.</h2>
 
 			<div class="how_box_wrapper">
 
@@ -94,7 +108,7 @@
 			</div>
 
 			<div class="button_wrapper">
-				<button>get started</button>
+				<button>see more</button>
 			</div>
 			
 		</div>
@@ -166,7 +180,7 @@
 			</div>
 		</div>
 		<a href="#" class="button_wrapper">
-			<button type="button">view all</button>
+			<button>view all</button>
 		</a>
 	</div>
 	<!-- section - let's talk -->
