@@ -11,7 +11,10 @@ button:focus,
 input:focus{
 	outline: none;
 }
-
+.here{
+	border-bottom: solid #eb5f1e 2px;
+	width: 20%;
+}
 /* header */
 
 .header_wrapper{
@@ -192,7 +195,7 @@ input:focus{
 	text-transform: uppercase;
 	letter-spacing: 0.06em;
 	color: #fff;
-	padding: 0 4rem;
+	margin: 0 4rem;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	-o-transition: all 0.3s;
@@ -429,7 +432,8 @@ margin-top: 7%;
 	background-color: #71717117;
 }
 .bg_4 h2,
-.bg_3 h2{
+.bg_3 h2,
+.bg_3_ther h2{
 	font-size: 70px;
 	text-align: center;
 	letter-spacing: 0.06em;
@@ -1203,4 +1207,81 @@ margin-top: 7%;
 .num:hover{
 	color: black;
 	opacity: 1;
+}
+/* therapy page 
+================================================================================================================================================================== */
+.bg_therapy{
+	padding: 10% 0;
+}
+.bg_therapy h2{
+	font-family: 'rubik-regular';
+	font-size: 70px;
+	letter-spacing: 0.06em;
+	text-align: center;
+	text-transform: capitalize;
+}
+.bg_therapy p{
+	font-family: 'rubik-light';
+	font-size: 36px;
+	letter-spacing: 0.06em;
+	text-align: center;
+	margin: 3%;
+}
+.bg_therapy button{
+	outline: none;
+	background-color: transparent;
+	border: 2px #eb5f1e solid ;
+	font-size: 18px;
+	font-family: 'rubik-light';
+	color:#1d1d1d;
+	cursor: pointer;
+	padding: 1.5% 2%;
+	text-transform: uppercase;
+	transition: 0.1s background-color linear, 0.1s color linear;
+}
+.bg_therapy button:hover{
+	background-color: #eb5f1e;
+	color: #fff;
+}
+.bg_dia{
+	background-color: #71717117;
+	padding: 10% 0;
+}
+.dia_flex{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.dia_box{
+	background: linear-gradient(to bottom, rgba(250, 250, 250, 0), rgba(17, 17, 17, 0.781)),
+	 url(https://www.charlesglassmanmd.com/images/page/blog-8-useful-ways-to-fight-anxiety-and-depression-15990486306021.jpg) no-repeat center center ;
+	 background-size: cover;
+	width: 30%;
+	height: 300px;
+	position: relative;
+	transition: 3s linear;
+}
+.dia_box:hover{
+	background: linear-gradient(to bottom, rgba(17, 17, 17, 0.452), rgb(17, 17, 17)),
+	url(https://www.charlesglassmanmd.com/images/page/blog-8-useful-ways-to-fight-anxiety-and-depression-15990486306021.jpg) no-repeat center center ;	
+	background-size: cover;
+}
+.dia_box h3{
+	font-size: 20px;
+	font-family: 'rubik-light';
+	letter-spacing: 0.06em;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #fff;
+	text-transform: uppercase;
+}
+.dia_box:first-child,
+.dia_box:nth-child(2),
+.dia_box:nth-child(3){
+	margin-bottom: 5%;
+}
+.bg_3_ther{
+	padding-top: 10%;
 }
