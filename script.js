@@ -35,7 +35,6 @@ const closeNavbar = () => {
     sidebar.style.visibility = 'hidden';
 }
 // Event listeners
-btnod.addEventListener('click', openModal);
 window.addEventListener('click', e => {
     if (e.target === modal) {
         modal.style.display = 'none';
